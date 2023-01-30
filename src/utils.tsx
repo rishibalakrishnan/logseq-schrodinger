@@ -187,7 +187,7 @@ export async function getBlocksInPage(
   if (curPage.originalName != undefined) {
     curPage["original-name"] = curPage.originalName;
   }
-
+  console.log(curPage.originaName)
   const docTree = await logseq.Editor.getPageBlocksTree(
     curPage["original-name"]
   );
